@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pagesCSS/movieTypes.css" />
+    <link rel="stylesheet" href="../pagesCSS/home.css" />
+    <link rel="stylesheet" href="../pagesCSS/navBar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--ICONS FOR FOOTER LINK-->
+
+    <link rel="stylesheet" href="../pagesCSS/footer.css" />
+    <link rel="stylesheet" href="../Responsive/footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <title>Batman Movies</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <ul class="top-nav">
+          <li class="logo">
+            <a href="../pages/home.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="160"
+                height="155"
+                viewbox="0 0 172 172"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#cc073c">
+                  <path
+                    d="M86,71.9956c2.64551,0 3.29639,0.62989 3.29639,0.62989l1.32276,-5.50098c0,0 1.32276,4.87109 1.32276,9.1543c0.67188,3.67432 7.95752,1.21778 13.89941,0c6.61377,-1.21777 7.03369,-11.92578 7.03369,-11.92578h59.125c0,0 -35.4834,10.87598 -26.875,32.25c0,0 -51.18847,-8.10449 -59.125,21.81494c-7.93652,-29.91943 -59.125,-21.81494 -59.125,-21.81494c8.6084,-21.37402 -26.875,-32.25 -26.875,-32.25h59.125c0,0 0.41992,10.70801 6.36182,11.92578c5.96289,1.21778 13.89941,3.67432 13.89941,0c0.67188,-3.65332 1.32276,-9.1543 1.32276,-9.1543l1.32276,5.50098c0.67188,0 1.99463,-0.62989 3.96826,-0.62989z"
+                  ></path>
+                </g>
+              </svg>
+              <h4 class="header_two">batman movies</h4>
+              <!-- <span>M<span id="logo_em1">y</span></span
+              ><span id="logo_em3">IMD</span><span id="logo_em2">B</span> -->
+            </a>
+          </li>
+          <li><a href="../pages/home.html">Home</a></li>
+          <li><a href="../pages/films.html">Films</a></li>
+          <li><a href="../pages/series.html">Tv Series</a></li>
+          <li class="active"><a href="../pages/cartoons.html">Cartoons</a></li>
+          <li class="search-list-item">
+            <a href="../pages/search.html">SEARCH</a>
+          </li>
+          <li class="login-list-item">
+            <a href="../pages/register.html">LOG IN</a>
+          </li>
+          <ul id="wrapper">
+            <li id="userInfo"><span id="welcomeUser"></span></li>
+            <li>
+              <button class="logoutBtn"><span>LOGOUT</span></button>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <div class="details-bar">
+        <h3>Cartoons</h3>
+        <form class="search">
+          <input id="search-input" type="text" placeholder="Search..." />
+          <select name="movie" id="movie-options">
+            <option value="Title">Title</option>
+            <option value="Year">Year</option>
+            <option value="Genre">Genre</option>
+          </select>
+          <input id="movie-type" type="hidden" value="game" />
+        </form>
+        <form class="filter">
+          <p>Filter by genre</p>
+          <select name="movie-genre" id="movie-genre-options">
+            <option value="all">All</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="family">Family</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="thriller">Thriller</option>
+          </select>
+        </form>
+        <button id="add-btn">Add movie</button>
+      </div>
+      <div id="add-movie-form"></div>
+      <div id="cartoons" class="cartoons"></div>
+      <div id="cartoons-pagination" class="pagination"></div>
+    </main>
+    <footer class="footer">
+      <div class="middle">
+        <a class="btn" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-google"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- <script src="../models/fetchApi.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/25e4a1b883.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../models/staticFn.js"></script>
+    <script src="../views/singleMovie.js"></script>
+    <script src="../views/listsMovies.js"></script>
+    <script src="../models/fetchApi.js"></script>
+    <script src="../views/addMovie.js"></script>
+    <script src="../views/cartoons.js"></script>
+    <script src="../views/logout.js"></script>
+  </body>
+</html>

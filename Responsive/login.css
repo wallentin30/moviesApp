@@ -1,0 +1,40 @@
+@-webkit-keyframes sk-innerCircle {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-innerCircle {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#redirect {
+  display: flex;
+  font-size: 30px;
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.errorMsg {
+  display: block;
+  color: blue;
+}
+.error {
+  display: none;
+  color: #cc073c;
+  font-weight: bold;
+}

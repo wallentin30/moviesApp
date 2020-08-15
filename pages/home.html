@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ICONS LINK-->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../pagesCSS/home.css" />
+    <link rel="stylesheet" href="../pagesCSS/navBar.css" />
+    <title>HOME</title>
+  </head>
+
+  <body>
+    <header id="header">
+     
+      <nav>
+        <div class="menuToggle">
+         
+        <ul class="top-nav">
+          <li class="logo">
+            <!-- <a href="../pages/home.html"> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="160"
+                height="155"
+                viewbox="0 0 172 172"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#cc073c">
+                  <path
+                    d="M86,71.9956c2.64551,0 3.29639,0.62989 3.29639,0.62989l1.32276,-5.50098c0,0 1.32276,4.87109 1.32276,9.1543c0.67188,3.67432 7.95752,1.21778 13.89941,0c6.61377,-1.21777 7.03369,-11.92578 7.03369,-11.92578h59.125c0,0 -35.4834,10.87598 -26.875,32.25c0,0 -51.18847,-8.10449 -59.125,21.81494c-7.93652,-29.91943 -59.125,-21.81494 -59.125,-21.81494c8.6084,-21.37402 -26.875,-32.25 -26.875,-32.25h59.125c0,0 0.41992,10.70801 6.36182,11.92578c5.96289,1.21778 13.89941,3.67432 13.89941,0c0.67188,-3.65332 1.32276,-9.1543 1.32276,-9.1543l1.32276,5.50098c0.67188,0 1.99463,-0.62989 3.96826,-0.62989z"
+                  ></path>
+                </g>
+              </svg>
+        
+            </a>
+            
+          </li>
+        
+          <li class = "myLinks" class="active"><a href="../pages/home.html">Home</a></li>
+          <li class = "myLinks"><a  href="../pages/films.html">Films</a></li>
+          <li class = "myLinks"><a  href="../pages/series.html">Tv Series</a></li>
+          <li class = "myLinks"><a  href="../pages/cartoons.html">Cartoons</a></li>
+          <li class = "myLinks" class="search-list-item">
+            <a  href="../pages/search.html">SEARCH</a>
+          </li>
+          <li  class="login-list-item">
+            <a  href="../pages/register.html">LOG IN</a>
+          </li>
+          <ul id="wrapper">
+            <li id="userInfo"><span id="welcomeUser"></span></li>
+            <li>
+              <button  id="logoutBtn"><span>LOGOUT</span></button>
+            </li>
+          </ul>
+        </ul>
+        
+      </div>
+      </nav>
+      
+    </header>
+    <div class="hero-image"><img src="../assets/heroImage01.png" /></div>
+    <div id="app"></div>
+    <div class="header-containers">
+      <h3>Top rated</h3>
+    </div>
+    <div id="top-rated"></div>
+    <div class="container_space">
+      <img class="wide" src="../assets/movieStrip.png" />
+    </div>
+    <div class="header-containers">
+      <h3>Comedy</h3>
+    </div>
+    <div id="comedy"></div>
+    <div class="header-containers">
+      <h3>Horror</h3>
+    </div>
+    <div id="horror"></div>
+    <div class="header-containers">
+      <h3>Action</h3>
+    </div>
+    <div id="action"></div>
+    <div class="header-containers">
+      <h3>Drama</h3>
+    </div>
+    <div id="drama"></div>
+    <footer class="footer">
+      <p>Footer</p>
+    </footer>
+    <script src="../views/singleMovie.js"></script>
+    <script src="../views/listsMovies.js"></script>
+    <script src="../models/fetchApi.js"></script>
+    <script src="../views/home.js"></script>
+    <script src="../views/logout.js"></script> 
+ 
+    
+  
+    <!-- <script src="../views/details.js"></script> -->
+  </body>
+</html>

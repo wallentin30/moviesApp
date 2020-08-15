@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ICONS LINK-->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../pagesCSS/footer.css" />
+    <link rel="stylesheet" href="../Responsive/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <!--CSS FOLDER-->
+    <link rel="stylesheet" href="../pagesCSS/register.css" />
+    <link rel="stylesheet" href="../pagesCSS/navBar.css" />
+    <link rel="stylesheet" href="../Responsive/login.css" />
+    <link rel="stylesheet" href="../Responsive/register.css" />
+    <title>Batman Movies</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="sk-spinner sk-spinner-wordpress">
+        <span class="sk-inner-circle"></span>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <ul class="top-nav">
+          <li class="logo">
+            <a href="../pages/home.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="160"
+                height="155"
+                viewbox="0 0 172 172"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#cc073c">
+                  <path
+                    d="M86,71.9956c2.64551,0 3.29639,0.62989 3.29639,0.62989l1.32276,-5.50098c0,0 1.32276,4.87109 1.32276,9.1543c0.67188,3.67432 7.95752,1.21778 13.89941,0c6.61377,-1.21777 7.03369,-11.92578 7.03369,-11.92578h59.125c0,0 -35.4834,10.87598 -26.875,32.25c0,0 -51.18847,-8.10449 -59.125,21.81494c-7.93652,-29.91943 -59.125,-21.81494 -59.125,-21.81494c8.6084,-21.37402 -26.875,-32.25 -26.875,-32.25h59.125c0,0 0.41992,10.70801 6.36182,11.92578c5.96289,1.21778 13.89941,3.67432 13.89941,0c0.67188,-3.65332 1.32276,-9.1543 1.32276,-9.1543l1.32276,5.50098c0.67188,0 1.99463,-0.62989 3.96826,-0.62989z"
+                  ></path>
+                </g>
+              </svg>
+              <h4 class="header_two">batman movies</h4>
+            </a>
+          </li>
+          <li><a href="../pages/home.html">Home</a></li>
+          <li><a href="../pages/films.html">Films</a></li>
+          <li><a href="../pages/series.html">Tv Series</a></li>
+          <li><a href="../pages/cartoons.html">Cartoons</a></li>
+          <li class="search-list-item">
+            <a href="../pages/search.html">SEARCH</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <span id="redirect"></span>
+    <div id="wrapperHide">
+      <div class="container" id="container">
+        <div id="signUpContainer" class="form-container sign-up-container">
+          <div class="messageToUser">Registration was made with success !</div>
+          <form action="#" id="my_form">
+            <h1 class="createAccount">Create Account</h1>
+            <div class="name_container">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" id="fullName" placeholder="Name" />
+            </div>
+            <span class="error_userName_signUp">
+              name must contain at least 8 characters ! numbers/white spaces and
+              special characters are not allowed<i
+                class="fa fa-exclamation-circle"
+              ></i>
+            </span>
+            <div class="email_container">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                placeholder="example@example.com"
+                id="Email"
+              />
+            </div>
+            <span class="error_email-signUp"
+              >email must be in the following order: example@example. + after
+              the . add at least 2 letters
+              <i class="fa fa-exclamation-circle"></i
+            ></span>
+            <div class="password_container">
+              <i class="fas fa-key"></i>
+              <input type="password" placeholder="Password" id="pass" />
+            </div>
+            <div class="show_password">
+              <i class="fa fa-eye">Show password</i>
+              <span class="clear_inputs">Clear inputs</span>
+            </div>
+            <span class="error_inputPassword"
+              >password must contain 7 to 16 characters which contain only
+              characters, numeric digits, underscore and first character must be
+              a letter<i class="fa fa-exclamation-circle"></i
+            ></span>
+            <button type="submit" id="authRegister">Register</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form id="form" class="signIn_form">
+            <p class="error"><i class="fa fa-exclamation-circle"></i></p>
+            <h1>Sign in</h1>
+            <input
+              type="email"
+              name="email"
+              id="emailLogIn"
+              placeholder="Email"
+            />
+
+            <input
+              type="password"
+              id="passLogIn"
+              placeholder="Password"
+              required
+            />
+
+            <button id="signInBtn">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="middle">
+        <a class="btn" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-google"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="../models/staticFn.js"></script>
+    <script src="../models/fetchApi.js"></script>
+    <script src="../views/register.js"></script>
+    <script src="../views/login.js"></script>
+  </body>
+</html>
